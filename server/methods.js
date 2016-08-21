@@ -14,7 +14,7 @@ Meteor.methods({
     },
 
     toggleResolution(resolution) {
-        if(!Meteor.userId() !== resolution.user) {
+        if(Meteor.userId() !== resolution.user) {
             throw new Meteor.Error('not-authorized');
         }
 
@@ -26,8 +26,7 @@ Meteor.methods({
     },
 
     deleteResolution(resolution) {
-
-        if(!Meteor.userId() !== resolution.user) {
+        if(Meteor.userId() !== resolution.user) {
             throw new Meteor.Error('not-authorized');
         }
 
