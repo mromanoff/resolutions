@@ -1,4 +1,4 @@
-React Meteor resolution. [![npm](https://img.shields.io/badge/npm-1.0.1-ff69b4.svg?style=flat-square)](https://github.com/mromanoff/resolutions)
+Resolutions. [![npm](https://img.shields.io/badge/npm-1.0.1-ff69b4.svg?style=flat-square)](https://github.com/mromanoff/resolutions)
 ---
 
 ReactJS
