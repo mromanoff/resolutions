@@ -4,7 +4,7 @@ import AccountUI from '../AccountsUI.jsx';
 export const MainLayout = ({content}) => (
     <div className="main-layout">
         <header>
-            <h2>My resolutions</h2>
+            <h1>My resolutions</h1>
             <nav>
                 <a href="/">Resolutions</a> |
                 <a href="/about">About</a> |
