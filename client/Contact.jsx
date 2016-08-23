@@ -15,6 +15,7 @@ export default class Contact extends Component {
                 transitionAppear={true}
             >
                 <h1>Contact</h1>
+                <p>Michael Romanoff: {Meteor.settings.public.email}</p>
             </ReactCSSTransitionGroup>
         )
     }
