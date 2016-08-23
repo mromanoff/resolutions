@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 export default class About extends Component {
 
@@ -8,7 +10,14 @@ export default class About extends Component {
 
     render() {
         return (
-            <div>
+            <ReactCSSTransitionGroup
+                component="div"
+                transitionName="route"
+                transitionEnterTimeout={600}
+                transitionAppearTimeout={600}
+                transitionLeaveTimeout={400}
+                transitionAppear={true}
+            >
                 <h1>About</h1>
                 <p>Polaroid ullamco distillery poutine, banh mi 3 wolf moon nihil tempor mustache. Chia et tote bag,
                     keytar asymmetrical brunch esse meh. Deep v quis lomo accusamus, shabby chic marfa ex irure
@@ -17,7 +26,7 @@ export default class About extends Component {
                     skateboard gluten-free, cardigan consequat forage butcher. Fashion axe deep v salvia narwhal,
                     gochujang chillwave jean shorts kickstarter meggings skateboard.</p>
                 <button onClick={this.setVar}>sign up</button>
-            </div>
+            </ReactCSSTransitionGroup>
         )
     }
 }
